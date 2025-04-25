@@ -3,9 +3,13 @@ let adj = ['great', 'big'];
 let noun = ['jogger', 'racoon'];
 let domain = ['.com','.net','.us','.io']
 
-let randomPronoun = Math.floor(Math.random() * pronoun.length);
-let randomAdj = Math.floor(Math.random() * adj.length);
-let randomNoun = Math.floor(Math.random() * noun.length);
-let randomDomain = Math.floor(Math.random() * domain.length);
+for(let i = 0; i < pronoun.length; i++){
+    for(let j = 0; j < adj.length; j++){
+        for(let k = 0; k < noun.length; k++){
+            for(let y = 0; y < domain.length; y++){
+                console.log(`${pronoun[i]}${adj[j]}${noun[k]}${domain[y]}`);
+            }
+        }
+    }
+}
 
-console.log(`${pronoun[randomPronoun]}${adj[randomAdj]}${noun[randomNoun]}${domain[randomDomain]}`)
